@@ -1,0 +1,56 @@
+通过adb shell 启动手机app方法
+
+先列出手机上所有应用信息：
+
+adb shell dumpsys package > ./package.txt
+
+从中找出你要的APP，重点关注 Activity Resolver Table 下面的内容。另外，看你的应用APK包的名字，搜索关键词
+
+找到后:
+强制关闭应用：
+
+adb shell am force-stop xxxxxx
+
+启动应用：
+
+adb  shell am start -n xxxxxx/xxxx
+
+--------------------------------------------------------------------------
+
+？？？ no permissions  出现解决办法
+
+首先检查手机是否处于开发者选项，并且是否打开usb调试
+
+lsusb查看以下USB设备
+
+Bus 001 Device 008: ID 18d1:9025 Google Inc.
+
+按官网资料操作:
+
+创建一个51-android.rules文件
+
+sudo gedit /etc/udev/rules.d/51-android.rules
+
+输入内容如下：
+
+SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", ATTRS{idProduct}=="9025", MODE="0666", GROUP="plugdev" 
+
+然后进行授权操作：
+
+sudo chmod a+r /etc/udev/rules.d/51-android.rules
+
+
+现在adb devices仍然出现上述问题，需要重启udev
+
+sudo service udev restart
+
+重新拔插一下数据线。
+
+现在再执行一下adb devices看看:
+
+    List of devices attached 
+	    5XXXXXX2	device
+
+------------------------------------------------------------------------------
+
+
