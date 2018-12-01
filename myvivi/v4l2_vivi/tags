@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+KERNEL	Makefile	/^KERNEL	:=\/lib\/modules\/`uname -r`\/build$/;"	m
+myvivi_buffer_prepare	vivi.c	/^ static int myvivi_buffer_prepare(struct videobuf_queue *vq, struct videobuf_buffer *vb,$/;"	f	file:
+myvivi_buffer_queue	vivi.c	/^ static void myvivi_buffer_queue(struct videobuf_queue *vq, struct videobuf_buffer *vb)$/;"	f	file:
+myvivi_buffer_release	vivi.c	/^ static void myvivi_buffer_release(struct videobuf_queue *vq,$/;"	f	file:
+myvivi_buffer_setup	vivi.c	/^  static int myvivi_buffer_setup(struct videobuf_queue *vq, unsigned int *count, unsigned int *size)$/;"	f	file:
+myvivi_close	vivi.c	/^ static int myvivi_close(struct file *file)$/;"	f	file:
+myvivi_device	vivi.c	/^ static struct video_device *myvivi_device;$/;"	v	typeref:struct:video_device	file:
+myvivi_exit	vivi.c	/^ module_exit(myvivi_exit);$/;"	v
+myvivi_exit	vivi.c	/^ static void myvivi_exit(void)$/;"	f	file:
+myvivi_fops	vivi.c	/^ static const struct v4l2_file_operations myvivi_fops = $/;"	v	typeref:struct:v4l2_file_operations	file:
+myvivi_format	vivi.c	/^ struct v4l2_format myvivi_format;$/;"	v	typeref:struct:v4l2_format
+myvivi_init	vivi.c	/^ module_init(myvivi_init);$/;"	v
+myvivi_init	vivi.c	/^ static int myvivi_init(void)$/;"	f	file:
+myvivi_ioctl_ops	vivi.c	/^ static const struct v4l2_ioctl_ops myvivi_ioctl_ops = $/;"	v	typeref:struct:v4l2_ioctl_ops	file:
+myvivi_mmap	vivi.c	/^ static int myvivi_mmap(struct file *file, struct vm_area_struct *vma)$/;"	f	file:
+myvivi_open	vivi.c	/^ static int myvivi_open(struct file *file)$/;"	f	file:
+myvivi_poll	vivi.c	/^ static unsigned int myvivi_poll(struct file *file, struct poll_table_struct *wait)$/;"	f	file:
+myvivi_queue_slock	vivi.c	/^ static spinlock_t myvivi_queue_slock;$/;"	v	file:
+myvivi_release	vivi.c	/^ static void myvivi_release(struct video_device *vdev)$/;"	f	file:
+myvivi_timer	vivi.c	/^ static struct timer_list myvivi_timer;$/;"	v	typeref:struct:timer_list	file:
+myvivi_timer_function	vivi.c	/^ static void myvivi_timer_function(unsigned long data)$/;"	f	file:
+myvivi_vb_local_queue	vivi.c	/^ static struct list_head myvivi_vb_local_queue;$/;"	v	typeref:struct:list_head	file:
+myvivi_vb_vidqueue	vivi.c	/^ static struct videobuf_queue myvivi_vb_vidqueue;$/;"	v	typeref:struct:videobuf_queue	file:
+myvivi_video_qops	vivi.c	/^ static struct videobuf_queue_ops myvivi_video_qops = {$/;"	v	typeref:struct:videobuf_queue_ops	file:
+myvivi_videoc_querycap	vivi.c	/^ static int myvivi_videoc_querycap(struct file *file, void  *priv,$/;"	f	file:
+myvivi_vidioc_dqbuf	vivi.c	/^ static int myvivi_vidioc_dqbuf(struct file *file, void *priv, struct v4l2_buffer *p)$/;"	f	file:
+myvivi_vidioc_enum_fmt_vid_cap	vivi.c	/^ static int myvivi_vidioc_enum_fmt_vid_cap(struct file *file, void  *priv,$/;"	f	file:
+myvivi_vidioc_g_fmt_vid_cap	vivi.c	/^ static int myvivi_vidioc_g_fmt_vid_cap(struct file *file, void *priv,$/;"	f	file:
+myvivi_vidioc_qbuf	vivi.c	/^ static int myvivi_vidioc_qbuf(struct file *file, void *priv, struct v4l2_buffer *p)$/;"	f	file:
+myvivi_vidioc_querybuf	vivi.c	/^ static int myvivi_vidioc_querybuf(struct file *file, void *priv, struct v4l2_buffer *p)$/;"	f	file:
+myvivi_vidioc_reqbufs	vivi.c	/^ static int myvivi_vidioc_reqbufs(struct file *file, void *priv,$/;"	f	file:
+myvivi_vidioc_s_fmt_vid_cap	vivi.c	/^ static int myvivi_vidioc_s_fmt_vid_cap(struct file *file, void *priv,$/;"	f	file:
+myvivi_vidioc_streamoff	vivi.c	/^ static int myvivi_vidioc_streamoff(struct file *file, void *priv, enum v4l2_buf_type i)$/;"	f	file:
+myvivi_vidioc_streamon	vivi.c	/^ static int myvivi_vidioc_streamon(struct file *file, void *priv, enum v4l2_buf_type i)$/;"	f	file:
+myvivi_vidioc_try_fmt_vid_cap	vivi.c	/^ static int myvivi_vidioc_try_fmt_vid_cap(struct file *file, void *priv,$/;"	f	file:
+obj-m	Makefile	/^obj-m	:=vivi.o$/;"	m
+v4l2_dev	vivi.c	/^ static struct v4l2_device v4l2_dev;$/;"	v	typeref:struct:v4l2_device	file:

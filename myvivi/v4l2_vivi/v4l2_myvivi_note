@@ -1,0 +1,26 @@
+insmod myvivi.ko时提示错误
+insmod: ERROR: could not insert module myvivi.ko: Unknown symbol in module
+
+查看依赖
+
+modinfo  ./myvivi.ko | grep depend
+
+显示：depends:        videodev,v4l2-common
+
+执行：
+sudo modprobe videodev
+sudo modprobe v4l2-common
+insmod myvivi.ko
+
+
+新内核加了retpoline安全编译选项，可用以下命令解决
+
+echo "#define RETPOLINE 1" >> /usr/src/linux-headers-3.13.0-143-generic/include/generated/utsrelease.h
+
+
+
+
+
+
+
+

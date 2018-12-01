@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BIT_COUNT	jyuv.c	2;"	d	file:
+COUNT	CameralOpt.h	11;"	d
+Exit_Cameral	CameralOpt.c	/^int Exit_Cameral(void)$/;"	f
+Exit_Framebuffer	framebuffer.c	/^int Exit_Framebuffer(void)$/;"	f
+FrameBuffer	framebuffer.c	/^static int *FrameBuffer = NULL ; $/;"	v	file:
+Frame_fd	framebuffer.c	/^static int Frame_fd ; $/;"	v	file:
+Get_Picture	CameralOpt.c	/^int Get_Picture(char *buffer)$/;"	f
+H	framebuffer.c	/^static int W , H ;$/;"	v	file:
+HIGHT	project.c	8;"	d	file:
+Init_Cameral	CameralOpt.c	/^int Init_Cameral(int Width , int Hight)$/;"	f
+Init_FrameBuffer	framebuffer.c	/^int Init_FrameBuffer(int Width , int Higth)$/;"	f
+RESERVED1	jyuv.h	/^    u32       RESERVED1;$/;"	m	struct:bmp_header_t
+RGB	FrameBufferOpt.h	8;"	d
+Start_Cameral	CameralOpt.c	/^int Start_Cameral(void)$/;"	f
+Stop_Cameral	CameralOpt.c	/^int Stop_Cameral(void)$/;"	f
+W	framebuffer.c	/^static int W , H ;$/;"	v	file:
+WIDTH	project.c	7;"	d	file:
+Write_FrameBuffer	framebuffer.c	/^int Write_FrameBuffer(const char *buffer)$/;"	f
+_CAMERALOPT_H	CameralOpt.h	2;"	d
+_FRAMEBUFFEROPT_H	FrameBufferOpt.h	2;"	d
+__JYUV_H	jyuv.h	2;"	d
+bit_compression	jyuv.h	/^    u32       bit_compression; \/\/0$/;"	m	struct:bmp_header_t
+bit_count	jyuv.h	/^    u16       bit_count;$/;"	m	struct:bmp_header_t
+bmp_header_t	jyuv.h	/^struct bmp_header_t{$/;"	s
+color_num	jyuv.h	/^    u32       color_num;$/;"	m	struct:bmp_header_t
+color_planes	jyuv.h	/^    u16       color_planes; \/\/1$/;"	m	struct:bmp_header_t
+dequeue	CameralOpt.c	/^struct v4l2_buffer  enqueue  , dequeue ;  \/\/定义出入队的操作结构体成员$/;"	v	typeref:struct:
+enqueue	CameralOpt.c	/^struct v4l2_buffer  enqueue  , dequeue ;  \/\/定义出入队的操作结构体成员$/;"	v	typeref:struct:v4l2_buffer
+file_size	jyuv.h	/^    u32       file_size;$/;"	m	struct:bmp_header_t
+h_resolution	jyuv.h	/^    u32       h_resolution;$/;"	m	struct:bmp_header_t
+head_num	jyuv.h	/^    u32       head_num;    \/\/40$/;"	m	struct:bmp_header_t
+height	jyuv.h	/^    u32       height;$/;"	m	struct:bmp_header_t
+image_size	jyuv.h	/^    u32       image_size; \/\/except the size of header$/;"	m	struct:bmp_header_t
+important_colors	jyuv.h	/^    u32       important_colors;$/;"	m	struct:bmp_header_t
+length	CameralOpt.c	/^int length ; $/;"	v
+magic	jyuv.h	/^    u16        magic;$/;"	m	struct:bmp_header_t
+main	project.c	/^int main(void)$/;"	f
+offset	jyuv.h	/^    u32       offset;         \/\/54 bytes 表示54个偏移量$/;"	m	struct:bmp_header_t
+set_bmp_header	jyuv.c	/^void set_bmp_header(struct bmp_header_t *header, u32 width, u32 height)$/;"	f
+u16	jyuv.h	/^typedef unsigned short u16;$/;"	t
+u32	jyuv.h	/^typedef unsigned int   u32;$/;"	t
+u8	jyuv.h	/^typedef unsigned char  u8;$/;"	t
+v_resolution	jyuv.h	/^    u32       v_resolution;$/;"	m	struct:bmp_header_t
+video_fd	CameralOpt.c	/^int video_fd ; $/;"	v
+width	jyuv.h	/^    u32       width;$/;"	m	struct:bmp_header_t
+yuv	CameralOpt.c	/^char *yuv[COUNT] ; $/;"	v
+yuyv2rgb24	jyuv.c	/^int yuyv2rgb24(u8 *yuyv, u8 *rgb, u32 width, u32 height)$/;"	f

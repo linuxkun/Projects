@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CLEAR	video_capture.h	14;"	d
+DRAW_FRAMEBUFFER_H_	draw_framebuffer.h	2;"	d
+IM_HEIGHT	video_capture.h	13;"	d
+IM_WIDTH	video_capture.h	12;"	d
+VIDEO_CAPTURE_H_	video_capture.h	9;"	d
+buf_in_while_loop	video_capture.c	/^struct v4l2_buffer buf_in_while_loop;$/;"	v	typeref:struct:v4l2_buffer
+buffer	video_capture.h	/^struct buffer {$/;"	s
+buffers	video_capture.c	/^struct buffer* buffers = NULL;$/;"	v	typeref:struct:buffer
+close_device	video_capture.c	/^static void close_device() {$/;"	f	file:
+dev_name	video_capture.c	/^static char* dev_name = "\/dev\/video0";$/;"	v	file:
+draw_framebuffer	draw_framebuffer.c	/^void draw_framebuffer(unsigned char* src){$/;"	f
+errno_exit	video_capture.c	/^static void errno_exit(const char * s) {$/;"	f	file:
+fbp	draw_framebuffer.c	/^static char* fbp = NULL;$/;"	v	file:
+fd	draw_framebuffer.c	/^static int fd = -1;$/;"	v	file:
+fd	video_capture.c	/^static int fd = -1; \/* vidoe0 file descriptor*\/$/;"	v	file:
+fds	video_capture.c	/^static fd_set fds;$/;"	v	file:
+finfo	draw_framebuffer.c	/^struct fb_fix_screeninfo finfo;$/;"	v	typeref:struct:fb_fix_screeninfo
+free_framebuffer	draw_framebuffer.c	/^void free_framebuffer() {$/;"	f
+free_video_capture	video_capture.c	/^void free_video_capture(){$/;"	f
+init_device	video_capture.c	/^static void init_device() {$/;"	f	file:
+init_framebuffer	draw_framebuffer.c	/^void init_framebuffer() {$/;"	f
+init_mmap	video_capture.c	/^static void init_mmap() {$/;"	f	file:
+init_video_capture	video_capture.c	/^void init_video_capture(){$/;"	f
+length	video_capture.h	/^	size_t length;$/;"	m	struct:buffer
+main	live.c	/^int main(void) {$/;"	f
+n_buffers	video_capture.c	/^static unsigned int n_buffers = 0;$/;"	v	file:
+open_device	video_capture.c	/^static void open_device() {$/;"	f	file:
+parse_im	video_capture.c	/^static void parse_im(const unsigned char *im_yuv, unsigned char *dst){$/;"	f	file:
+screensize	draw_framebuffer.c	/^static unsigned int screensize = 0;$/;"	v	file:
+start	video_capture.h	/^	void * start;$/;"	m	struct:buffer
+start_capturing	video_capture.c	/^static void start_capturing() {$/;"	f	file:
+stop_capturing	video_capture.c	/^static void stop_capturing() {$/;"	f	file:
+tv	video_capture.c	/^struct timeval tv;$/;"	v	typeref:struct:timeval
+uninit_device	video_capture.c	/^static void uninit_device() {$/;"	f	file:
+video_capture	video_capture.c	/^char video_capture(unsigned char* dst){$/;"	f
+vinfo	draw_framebuffer.c	/^struct fb_var_screeninfo vinfo;$/;"	v	typeref:struct:fb_var_screeninfo
+xioctl	video_capture.c	/^static int xioctl(int fd, int request, void * arg) {$/;"	f	file:
